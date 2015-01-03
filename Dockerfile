@@ -33,4 +33,6 @@ RUN ./eclipse \
 RUN sudo apt-get update
 RUN sudo apt-get install libswt-gtk-3-java -y
 
-CMD /home/developer/eclipse/eclipse
+CMD /home/developer/eclipse/eclipse -data /home/developer/workspace
+
+VOLUME ["/home/developer/workspace"]
