@@ -1,4 +1,4 @@
-Running Eclipse Luna inside a Docker container
+Running Eclipse Luna inside a Docker container with PyDev
 ---------------------------------------------
 
 ## Preliminary note
@@ -9,8 +9,8 @@ Kudos to @fgrehm.
 
 ### Run it
 
-    $ sudo docker run -it -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix batmat/docker-eclipse
+    $ sudo docker run -it -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix inspiredbusiness/docker-eclipse
 
 ### Build the image if you don't trust the pullable one
 
-    $ sudo docker build -t batmat/docker-eclipse
+    $ sudo docker build -t inspiredbusiness/docker-eclipse

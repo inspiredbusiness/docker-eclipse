@@ -20,6 +20,7 @@ ENV HOME /home/developer
 WORKDIR /home/developer
 RUN curl http://eclipse.ialto.com/technology/epp/downloads/release/luna/SR1/eclipse-java-luna-SR1-linux-gtk-x86_64.tar.gz | tar -xvz
 
+WORKDIR /home/developer/eclipse
 RUN ./eclipse \
 	-application org.eclipse.equinox.p2.director \
 	-repository http://pydev.org/updates \
